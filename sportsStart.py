@@ -125,6 +125,10 @@ def test_run():
     plt.plot(x_range, home_pred, 'yo', label='Predicted Home')
     plt.plot(x_range, away_pred, 'go', label='Predicted Away')
 
+    plt.title(f'Model: {GAMES_FILE_NAME}.csv, Test: {TEST_GAMES_FILE_NAME}.csv')
+    plt.xlabel('Game Count')
+    plt.ylabel('Points Scored')
+
     plt.legend(loc='upper left')
     plt.show()
 
